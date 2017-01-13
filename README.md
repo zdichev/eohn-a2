@@ -1,6 +1,23 @@
-# EohnA2
+# Eoics Open Hack Night Angular 2 introduction
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+## Setup your A2 Dev environment
+
+Install node.js. for your platform https://nodejs.org/en/download/
+Node installs also node package manager aka NPM
+
+Install Angular CLI A command line interface for Angular https://cli.angular.io/ 
+```$xslt
+npm install -g angular-cli
+```
+## Include app dependencies
+Install ui elements that we are going to use later. http://valor-software.com/ng2-bootstrap/#/
+```$xslt
+npm install ng2-bootstrap --save
+```
+This ui elements need styling. Install bootstrap. https://v4-alpha.getbootstrap.com/
+```$xslt
+npm install bootstrap@4.0.0-alpha.6 --save
+```
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
