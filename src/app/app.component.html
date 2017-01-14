@@ -1,3 +1,38 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-toggleable-md navbar navbar-inverse bg-primary fixed-top">
+
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <img src="assets/angular-icon.png" alt="logo" class="img-fluid">
+      <span style="text-transform: uppercase">Eohn</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/people">People</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="page-content">
+  <router-outlet></router-outlet>
+</div>
+
+
+<nav class="navbar navbar-light fixed-bottom text-left" style="background-color: #e3f2fd;">
+  <div class="container">
+    <span class="d-inline-block">Made with <i class="fa fa-heart" style="color: red" aria-hidden="true"></i> by <a href="https://twitter.com/zdichev">zarro</a></span>
+  </div>
+</nav>

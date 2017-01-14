@@ -3,7 +3,8 @@ var app = express();
 
 /* Serves all static files */
 app.get(/^(.+)$/, function (req, res) {
-  var filename = req.params[0].replace('/backend/rest/', '/data/') + '.json';
+  console.log(req.params[0]);
+  var filename = req.params[0].replace('/api/rest/', '/data/') + '.json';
   res.sendFile(__dirname + filename);
 });
 

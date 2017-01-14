@@ -9,15 +9,19 @@ Install Angular CLI A command line interface for Angular https://cli.angular.io/
 ```$xslt
 npm install -g angular-cli
 ```
-## Include app dependencies
+## Add a couple of libraries
 Install ui elements that we are going to use later. http://valor-software.com/ng2-bootstrap/#/
 ```$xslt
-npm install ng2-bootstrap --save
+npm install ng2-bootstrap -S
 ```
 This ui elements need styling. Install bootstrap. https://v4-alpha.getbootstrap.com/
 ```$xslt
-npm install bootstrap@4.0.0-alpha.6 --save
+npm install bootstrap@4.0.0-alpha.6 -S
 ```
+`npm install [package] -S` is short for `npm install [package] --save`
+
+Form more info check: https://docs.npmjs.com/cli/install
+
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
