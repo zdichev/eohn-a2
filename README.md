@@ -6,68 +6,67 @@
 Node installs also node package manager aka NPM
 
 2. Install Angular CLI A command line interface for Angular: https://cli.angular.io/ 
-```
-npm install -g angular-cli
-```
+    ```
+    npm install -g angular-cli
+    ```
 3. Clone this repo Duuuh
 
 4. Get into the folder and run `npm install`. That will instal the whole project with its dependencies
 
 5. First let's add some styling magic. Install bootstrap. https://v4-alpha.getbootstrap.com/
-```
-npm install bootstrap@4.0.0-alpha.6 -S
-```
-We are getting the newest bootstrap with all its goodies.
+    ```
+    npm install bootstrap@4.0.0-alpha.6 -S
+    ```
+    We are getting the newest bootstrap with all its goodies.
 
-5. Let's add some font icons - FontAwesome is great for the job. http://fontawesome.io/
-```
-npm install  font-awesome -S
-```
-`npm install [package] -S` is short for `npm install [package] --save` 
+6. Let's add some font icons - FontAwesome is great for the job. http://fontawesome.io/
+    ```
+    npm install  font-awesome -S
+    ```
+    `npm install [package] -S` is short for `npm install [package] --save` 
 
-For more info check: https://docs.npmjs.com/cli/install
+    For more info check: https://docs.npmjs.com/cli/install
 
-> Actually I wired the application in that way that it relies on the packages we just installed. Because of time limitation i had to do some plumbing work on its own. Don't worry if you have some questions I am around to satisfy your curiosity.
-> - Zarro
+    > Actually I wired the application in that way that it relies on the packages we just installed. Because of time limitation i had to do some plumbing work on its own. Don't worry if you have some questions I am around to satisfy your curiosity. Zarro
 
-6. Lets add two new pages to our client
+7. Lets add two new pages to our client
 
-We'll use ng-cli to add two new components - people and about. These components are going to become new pages.
-```
-ng g component pages/people
-```
-```
-ng g component pages/about
-```
+    We'll use ng-cli to add two new components - people and about. These components are going to become new pages.
+    ```
+    ng g component pages/people
+    ```
+    ```
+    ng g component pages/about
+    ```
 
-Ng-cli will update the import statements and the `@NgModule` decorator function to ensure that the components become part of our application. Check it after the commands finish. 
+    Ng-cli will update the import statements and the `@NgModule` decorator function to ensure that the components become part of our application. Check it after the commands finish. 
 
-Handy isn't it!
-7. Let's add some menu item to point to our freshly added pages. We can do that by extending the `RouterModule` in `app.module.ts` with two new objects:
-When you finish `RouterModule.forRoot()` function call should look like this:
-```
-RouterModule.forRoot(
-  [
-    {
-      path: '',
-      component: HomeComponent
-    },
-    {
-      path: 'people',
-      component: PeopleComponent
-    },
-    {
-      path: 'about',
-      component: AboutComponent
-    }
-  ]
-)
-```
-8. We have completely wired, styled and back-end communication enabled application. Volia !
-9. Do something on your own. 
-10. Don't forget to have FUN !
+    Handy isn't it!
+8. Let's add some menu item to point to our freshly added pages. We can do that by extending the `RouterModule` in `app.module.ts` with two new objects:
+    When you finish `RouterModule.forRoot()` function call should look like this:
+    ```
+    RouterModule.forRoot(
+      [
+        {
+          path: '',
+          component: HomeComponent
+        },
+        {
+          path: 'people',
+          component: PeopleComponent
+        },
+        {
+          path: 'about',
+          component: AboutComponent
+        }
+      ]
+    )
+    ```
+9. We have completely wired, styled and back-end communication enabled application. Volia !
+10. Do something on your own.  Don't forget to have FUN !
 
-![Best paty eva](https://cdn.meme.am/cache/instances/folder44/66743044.jpg)
+  ![Best paty eva](https://cdn.meme.am/cache/instances/folder44/66743044.jpg)
+
 
 ## Ng-Cli help 
 
