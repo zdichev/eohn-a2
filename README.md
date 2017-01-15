@@ -3,7 +3,7 @@
 ## Setup your A2 Dev environment
 
 1. Install node.js. for your platform https://nodejs.org/en/download/
-Node installs also node package manager aka NPM
+Node installs also node package manager aka NPM. You guessed it! That NPM is the program that manages our apps dependencies. So we only need the manifest file `package.json`.
 
 2. Install Angular CLI A command line interface for Angular: https://cli.angular.io/ 
     ```
@@ -27,7 +27,7 @@ Node installs also node package manager aka NPM
 
     For more info check: https://docs.npmjs.com/cli/install
 
-    > Actually I wired the application in that way that it relies on the packages we just installed. Because of time limitation i had to do some plumbing work on its own. Don't worry if you have some questions I am around to satisfy your curiosity. Zarro
+    > Actually I wired the application in that way that it relies on the packages we just installed. Because of time limitation i had to do some plumbing work on my own. Don't worry if you have some questions I will be around to satisfy your curiosity.
 
 7. Lets add two new pages to our client
 
@@ -66,7 +66,6 @@ Node installs also node package manager aka NPM
 10. Do something on your own.  Don't forget to have FUN !
 
   ![Best paty eva](https://cdn.meme.am/cache/instances/folder44/66743044.jpg)
-
 
 ## Ng-Cli help 
 
