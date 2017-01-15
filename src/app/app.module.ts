@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { PeopleComponent } from './pages/people/people.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PageHeaderComponent } from './common/page-header/page-header.component';
+import { TooltipModule, RatingModule } from 'ng2-bootstrap';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { PageHeaderComponent } from './common/page-header/page-header.component'
         path: 'about',
         component: AboutComponent
       }
-    ])
+    ]),
+    TooltipModule.forRoot(),
+    RatingModule.forRoot()
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

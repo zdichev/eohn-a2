@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {DataService} from "../../common/data-service/data.service";
 
 @Component({
   selector: 'app-about',
   templateUrl: 'about.component.html',
   styleUrls: ['about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
 
-  constructor() { }
+  private page: any;
 
-  ngOnInit() {
+  constructor(private dataService: DataService) {
+    dataService.getPageData('about').subscribe((data: any) => {
+      this.page = data;
+    });
   }
-  pageTitle = 'AboutComponent works!';
+
 }

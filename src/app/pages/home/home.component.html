@@ -1,8 +1,129 @@
 <div class="container page-content">
+
   <div class="row">
     <div class="col">
-      <page-header [title]="page?.title" [introText]="page?.intro"></page-header>
+      <page-header [title]="page?.title" [introText]="page?.intro" [titleDisplay]="'3'"></page-header>
+      <div class="half-banner">
+        <img src="assets/angular2.svg" alt="angular 2" style="width: auto; max-height: 100%;">
+      </div>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <a href="https://v4-alpha.getbootstrap.com/components/card/#card-columns" target="_blank">
+        <h2>How build these card columns <i class="fa fa-link" aria-hidden="true"></i></h2>
+      </a>
+    </div>
+  </div>
+
+  <div class="card-columns">
+    <div class="card">
+      <img src="assets/home/overview2.png" alt="a2 architecture" class="card-img-top img-fluid">
+      <div class="card-block">
+        <h4 class="card-title">Architecture overview</h4>
+        <p class="card-text">Angular is a framework for building client applications in HTML and either JavaScript or a language like TypeScript that compiles to JavaScript.</p>
+        <p class="card-text">The framework consists of several libraries, some of them core and some optional.</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+    <div class="card p-3">
+      <blockquote class="card-block card-blockquote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. kone</p>
+        <footer>
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card">
+      <div class="text-center">
+        <img src="assets/home/module.png" alt="a2 Modules" class="img-fluid card-img-top ">
+      </div>
+      <div class="card-block">
+        <h4 class="card-title">Modules</h4>
+        <p class="card-text">Angular apps are modular and Angular has its own modularity system called Angular modules or NgModules.
+          Angular modules are a big deal. This page introduces modules; the Angular modules page covers them in depth.</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+    <div class="card card-inverse card-primary p-3 text-center">
+      <blockquote class="card-blockquote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+        <footer>
+          <small>
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card text-center">
+      <div class="card-block">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img img-fluid" src="assets/home/library-module.png" alt="Card image">
+    </div>
+    <div class="card p-3 text-right">
+      <blockquote class="card-blockquote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>
+          <small class="text-muted">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </small>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <img class="card-img img-fluid card-img-top" src="assets/home/component-tree.png" alt="Card image">
+        <div class="card-block">
+          <h4 class="card-title">Templates</h4>
+          <p class="card-text">Notice how &lt;hero-detail&gt; rests comfortably among native HTML elements. Custom components mix seamlessly with native HTML in the same
+            layouts.</p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="text-center">
+        <img src="assets/home/databinding.png" alt="a2 architecture" class="card-img-top img-fluid">
+      </div>
+      <div class="card-block">
+        <h4 class="card-title">Data binding</h4>
+        <p class="card-text">Without a framework, you would be responsible for pushing data values into the HTML controls and turning user responses into actions and value updates.
+          Writing such push/pull logic by hand is tedious, error-prone, and a nightmare to read as any experienced jQuery programmer can attest.</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/home/injector-injects.png" alt="a2 architecture" class="card-img-top img-fluid">
+      <div class="card-block">
+        <h4 class="card-title">Dependency injection</h4>
+        <p class="card-text">Dependency injection is a way to supply a new instance of a class with the fully-formed dependencies it requires. Most dependencies are services.
+          Angular uses dependency injection to provide new components with the services they need.</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+
+
   </div>
 </div>
 

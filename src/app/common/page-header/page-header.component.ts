@@ -7,6 +7,7 @@ import { Component, Input  } from '@angular/core';
 })
 export class PageHeaderComponent {
 
+  @Input() titleDisplay: string = '3';
   @Input() title: string;
   @Input() introText: string;
 

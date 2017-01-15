@@ -4,6 +4,26 @@
       <page-header [title]="page?.title" [introText]="page?.intro"></page-header>
     </div>
   </div>
+
+  <div class="row album">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let person of people">
+      <div class="card card-inverse" style="background-color: #777; border-color: #333;">
+        <img class="card-img-top img-fluid" alt="{{person.name}}" src="assets/{{person.image}}">
+        <div class="card-block">
+          <h4 class="card-title text-truncate" tooltip="Ugabuga" container="body">{{person.name}}</h4>
+          <div class="rating">
+            <rating [(ngModel)]="person.rating" [max]="ratingMax" [readonly]="ratingIsReadOnly"
+                    stateOn="fa fa-star"
+                    stateOff="fa fa-star-o"
+                    style="color: #ff8b00;">
+            </rating> <span class="rating-text">{{person.rating}}/{{ratingMax}}</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 
