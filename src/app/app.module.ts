@@ -9,6 +9,7 @@ import { DataService } from './common/data-service/data.service';
 import { HomeComponent } from './pages/home/home.component';
 import { PeopleComponent } from './pages/people/people.component';
 import { AboutComponent } from './pages/about/about.component';
+import { MenuItems } from './menu.items';
 import { PageHeaderComponent } from './common/page-header/page-header.component';
 import { TooltipModule, RatingModule } from 'ng2-bootstrap';
 
@@ -25,20 +26,7 @@ import { TooltipModule, RatingModule } from 'ng2-bootstrap';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'people',
-        component: PeopleComponent
-      },
-      {
-        path: 'about',
-        component: AboutComponent
-      }
-    ]),
+    RouterModule.forRoot(MenuItems),
     TooltipModule.forRoot(),
     RatingModule.forRoot()
   ],

@@ -1,61 +1,76 @@
-# Eoics Open Hack Night Angular 2 introduction
+![eonics](http://eonics.nl/wp-content/uploads/2015/11/Eonics-logo-header-website4.jpg)
+# Open Hack Night Angular 2 Introduction
+Browse the slides here: https://slides.com/zdichev/deck 
+
 
 ## Setup your A2 Dev environment
 
-Install node.js. for your platform https://nodejs.org/en/download/
-Node installs also node package manager aka NPM
+1. Install node.js. for your platform https://nodejs.org/en/download/
+Node installs also node package manager aka NPM. You guessed it! That NPM is the program that manages our apps dependencies. So we only need the manifest file `package.json`.
 
-Install Angular CLI A command line interface for Angular: https://cli.angular.io/ 
-```
-npm install -g angular-cli
-```
-## Add a some of libraries
-Add styling magic. Install bootstrap. https://v4-alpha.getbootstrap.com/
-```
-npm install bootstrap@4.0.0-alpha.6 -S
-```
-Add FontAwesome, a font icons library. http://fontawesome.io/
-```
-npm install  font-awesome -S
-```
-`npm install [package] -S` is short for `npm install [package] --save` 
+2. Install Angular CLI A command line interface for Angular: https://cli.angular.io/ 
+    ```
+    npm install -g angular-cli
+    ```
+3. Clone this repo Duuuh
 
-For more info check: https://docs.npmjs.com/cli/install
+4. Get into the folder and run `npm install`. That will instal the whole project with its dependencies
 
-## Add two new pages
-Use ng.cli to add two new components - people and about. These components are going to become new pages.
-```
-ng g component pages/people
-```
-```
-ng g component pages/about
-```
+5. First let's add some styling magic. Install bootstrap. https://v4-alpha.getbootstrap.com/
+    ```
+    npm install bootstrap@4.0.0-alpha.6 -S
+    ```
+    We are getting the newest bootstrap with all its goodies.
 
-Ng-cli will update the import statements and the `@NgModule` decorator function. Check it after the commands finish. 
+6. Let's add some font icons - FontAwesome is great for the job. http://fontawesome.io/
+    ```
+    npm install  font-awesome -S
+    ```
+    `npm install [package] -S` is short for `npm install [package] --save` 
 
-Handy isn't it!
+    For more info check: https://docs.npmjs.com/cli/install
 
-Add menu items for the newly added pages by extending the `RouterModule` in `app.module.ts` with two new objects:
-When you finish `RouterModule.forRoot()` function call should look like below.
-```
-RouterModule.forRoot(
-  [
-    {
-      path: '',
-      component: HomeComponent
-    },
-    {
-      path: 'people',
-      component: PeopleComponent
-    },
-    {
-      path: 'about',
-      component: AboutComponent
-    }
-  ]
-)
-```
+    > Actually I wired the application in that way that it relies on the packages we just installed. Because of time limitation i had to do some plumbing work on my own. Don't worry if you have some questions I will be around to satisfy your curiosity.
 
+7. Lets add two new pages to our client
+
+    We'll use ng-cli to add two new components - people and about. These components are going to become new pages.
+    ```
+    ng g component pages/people
+    ```
+    ```
+    ng g component pages/about
+    ```
+
+    Ng-cli will update the import statements and the `@NgModule` decorator function to ensure that the components become part of our application. Check it after the commands finish. 
+
+    Handy isn't it!
+8. Let's add some menu item to point to our freshly added pages. We can do that by extending the `RouterModule` in `app.module.ts` with two new objects:
+    When you finish `RouterModule.forRoot()` function call should look like this:
+    ```ts
+    RouterModule.forRoot(
+      [
+        {
+          path: '',
+          component: HomeComponent
+        },
+        {
+          path: 'people',
+          component: PeopleComponent
+        },
+        {
+          path: 'about',
+          component: AboutComponent
+        }
+      ]
+    )
+    ```
+    
+    
+9. We have completely wired, styled and back-end communication enabled application. Volia !
+10. Do something on your own.  Don't forget to have FUN !
+
+  ![Best paty eva](https://cdn.meme.am/cache/instances/folder44/66743044.jpg)
 
 ## Ng-Cli help 
 
