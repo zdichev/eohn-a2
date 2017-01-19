@@ -951,11 +951,11 @@ $pre-scrollable-max-height: 340px !default;
   height: auto;
 }
 
-.page-content {
-  //Calculate the hight of the navigation and add some more space
-  margin-top: $navbar-padding-y * 2 + $nav-item-margin*2 + $nav-item-inline-spacer + $line-height-base + $spacer;
-  margin-bottom: $navbar-padding-y * 2 + $nav-item-margin*2 + $nav-item-inline-spacer + $line-height-base;
-}
+//.page-content {
+//  //Calculate the hight of the navigation and add some more space
+//  margin-top: $navbar-padding-y * 2 + $nav-item-margin*2 + $nav-item-inline-spacer + $line-height-base + $spacer;
+//  margin-bottom: $navbar-padding-y * 2 + $nav-item-margin*2 + $nav-item-inline-spacer + $line-height-base;
+//}
 
 .album .card {
   margin-bottom: $spacer-y;
