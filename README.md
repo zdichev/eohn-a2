@@ -1,4 +1,6 @@
-# Eoics Open Hack Night Angular 2 introduction
+![eonics](http://eonics.nl/wp-content/uploads/2015/11/Eonics-logo-header-website4.jpg)
+# Open Hack Night Angular 2 Introduction
+
 
 ## Setup your A2 Dev environment
 
@@ -44,7 +46,7 @@ Node installs also node package manager aka NPM. You guessed it! That NPM is the
     Handy isn't it!
 8. Let's add some menu item to point to our freshly added pages. We can do that by extending the `RouterModule` in `app.module.ts` with two new objects:
     When you finish `RouterModule.forRoot()` function call should look like this:
-    ```
+    ```ts
     RouterModule.forRoot(
       [
         {
