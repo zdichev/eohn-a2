@@ -1,5 +1,6 @@
 ![eonics](http://eonics.nl/wp-content/uploads/2015/11/Eonics-logo-header-website4.jpg)
 # Open Hack Night Angular 2 Introduction
+Browse the slides here: https://slides.com/zdichev/deck 
 
 
 ## Setup your A2 Dev environment
